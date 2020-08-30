@@ -1,0 +1,36 @@
+#include <stdio.h>
+#include <string.h>
+    int main() {
+        int n,c;
+        char food[20];
+        printf("Choose any number from 1-5\n");
+        scanf("%d",&n);
+        switch (n) {
+            case 1:
+                c = 250;
+                 strcpy(food,"Pizza");
+                break;
+            case 2:
+                c = 130;
+                 strcpy(food,"Burger");
+                break;
+            case 3:
+                c = 180;
+                 strcpy(food,"Pasta");
+                break;
+            case 4:
+                c = 100;
+                 strcpy(food, "french fries");
+                break;
+            case 5:
+                c = 150;
+                 strcpy(food,"sandwich");
+                break;
+            default:
+                printf("Invalid Input");
+                return 0;
+        }
+        printf("Food item - %s",food);
+        printf("\nPrice- Rs %d",c);
+        return 0;
+    }
